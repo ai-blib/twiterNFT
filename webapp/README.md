@@ -1,6 +1,5 @@
-# Marketplace Frontend
+# Frontend
 
-Decentraland's Marketplace
 
 ## Setup
 

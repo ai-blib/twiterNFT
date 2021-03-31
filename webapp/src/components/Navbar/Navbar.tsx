@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
 import { Menu, Icon } from 'decentraland-ui'
-import { Navbar as BaseNavbar } from 'decentraland-dapps/dist/containers'
+import { Navbar as BaseNavbar } from '../../baseComponent'
 
 import { locations } from '../../modules/routing/locations'
 import UserMenu from '../UserMenu'
@@ -9,7 +9,6 @@ import './Navbar.css'
 
 const Navbar = (props: Props) => {
   const { pathname, hasPendingTransactions, onNavigate, isConnected } = props
-
   if (isConnected) {
     props = { ...props, rightMenu: <UserMenu /> }
   }
