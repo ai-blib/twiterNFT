@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from 'react'
 import { Responsive } from 'semantic-ui-react'
 import { Container } from '../Container/Container'

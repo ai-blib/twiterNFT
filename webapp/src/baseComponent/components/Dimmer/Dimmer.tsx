@@ -1,2 +1,2 @@
-export { Dimmer, DimmerProps } from 'semantic-ui-react'
 import './Dimmer.css'
+export { Dimmer } from 'semantic-ui-react'

@@ -7,7 +7,7 @@ import { Atlas, Layer, Coord } from './Atlas'
 
 // Controlled
 
-let tiles
+let tiles:any;
 if (window) {
   Atlas.fetchTiles().then(_tiles => (tiles = _tiles))
 }
@@ -49,7 +49,7 @@ const handleClick = (x: number, y: number) => {
 
 // Hover
 
-let hover
+let hover:any;
 
 const isValid = () => {
   if (!hover) return false
@@ -93,7 +93,7 @@ const hoverFillLayer: Layer = (x, y) => {
   return null
 }
 
-const App = ({ children }) => (
+const App = ({ children }:any) => (
   <>
     <Navbar activePage="marketplace" isFullscreen />
     <Page isFullscreen>{children}</Page>

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from 'react'
 import { DropdownProps, Dropdown } from '../Dropdown/Dropdown'
 import { Header } from '../Header/Header'

@@ -1,4 +1,5 @@
 import * as React from 'react'
+// @ts-ignore
 import * as blockies from 'ethereum-blockies/blockies'
 import './Blockie.css'
 
@@ -55,6 +56,7 @@ export class Blockie extends React.PureComponent<BlockieProps> {
     }
     const { size, scale } = this.props
     const ctx = this.canvas.current.getContext('2d')
+    // @ts-ignore
     ctx.clearRect(0, 0, size * scale, size * scale)
     blockies.render(this.getOpts(), this.canvas.current)
   }
@@ -62,11 +64,11 @@ export class Blockie extends React.PureComponent<BlockieProps> {
   render() {
     const { size, scale, children, className } = this.props
     let classes = `dcl blockie ${className}`.trim()
-    if (scale * size <= 16) {
+    if (Number(scale) * + Number(size) <= 16) {
       classes += ' mini'
-    } else if (scale * size <= 24) {
+    } else if (Number(scale) * Number(size) <= 24) {
       classes += ' tiny'
-    } else if (scale * size <= 36) {
+    } else if (Number(scale )* Number(size) <= 36) {
       classes += ' small'
     }
 

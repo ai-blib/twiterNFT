@@ -1,4 +1,5 @@
 {
+  "defaultSeverity": "none",
   "extends": [
     "tslint-react",
     "dcl-tslint-config-standard",
@@ -18,6 +19,6 @@
     "quotemark": [true, "single", "jsx-double"]
   },
   "linterOptions": {
-    "exclude": ["src/contracts/*.ts", "node_modules/**/*.ts", "./**/*.js"]
+    "exclude": ["src/contracts/*.ts", "node_modules/**/*.ts", "./**/*.js","src/baseComponent/**"]
   }
 }

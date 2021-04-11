@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from 'react'
 import './Profile.css'
 import { Avatar } from '../../types/avatar'

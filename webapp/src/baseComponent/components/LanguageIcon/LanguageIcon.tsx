@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from 'react'
 import { Locale } from '../Language/Language'
 import './LanguageIcon.css'

@@ -10,11 +10,11 @@ export class HeaderMenu extends React.PureComponent<HeaderMenuProps> {
     stackable: false
   }
 
-  static Left = ({ children }) => (
+  static Left = ({ children }:any) => (
     <div className="dcl header-menu-left">{children}</div>
   )
 
-  static Right = ({ children }) => (
+  static Right = ({ children }:any) => (
     <div className="dcl header-menu-right">{children}</div>
   )
 

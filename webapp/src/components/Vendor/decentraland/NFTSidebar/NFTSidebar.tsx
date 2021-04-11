@@ -8,7 +8,7 @@ import './NFTSidebar.css'
 
 const NFTSidebar = (props: Props) => {
   const { section, onMenuItemClick } = props
-
+console.log(section,90)
   return (
     <div className="NFTSidebar">
       <Header sub>{t('nft_sidebar.categories')}</Header>

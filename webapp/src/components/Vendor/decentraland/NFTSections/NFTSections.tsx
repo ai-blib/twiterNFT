@@ -39,36 +39,36 @@ const NFTSections = (props: Props) => {
       />
       {[
         Section.WEARABLES,
-        Section.WEARABLES_HEAD,
-        Section.WEARABLES_FACIAL_HAIR,
-        Section.WEARABLES_HAIR,
-        Section.WEARABLES_UPPER_BODY,
-        Section.WEARABLES_LOWER_BODY,
-        Section.WEARABLES_FEET,
-        Section.WEARABLES_ACCESORIES,
-        Section.WEARABLES_EARRING,
-        Section.WEARABLES_EYEWEAR,
-        Section.WEARABLES_HAT,
-        Section.WEARABLES_HELMET,
-        Section.WEARABLES_MASK,
-        Section.WEARABLES_TIARA,
-        Section.WEARABLES_TOP_HEAD
+        // Section.WEARABLES_HEAD,
+        // Section.WEARABLES_FACIAL_HAIR,
+        // Section.WEARABLES_HAIR,
+        // Section.WEARABLES_UPPER_BODY,
+        // Section.WEARABLES_LOWER_BODY,
+        // Section.WEARABLES_FEET,
+        // Section.WEARABLES_ACCESORIES,
+        // Section.WEARABLES_EARRING,
+        // Section.WEARABLES_EYEWEAR,
+        // Section.WEARABLES_HAT,
+        // Section.WEARABLES_HELMET,
+        // Section.WEARABLES_MASK,
+        // Section.WEARABLES_TIARA,
+        // Section.WEARABLES_TOP_HEAD
       ].includes(section!) ? (
         <>
           <DropdownMenu
             values={[
-              Section.WEARABLES_HEAD,
-              Section.WEARABLES_FACIAL_HAIR,
-              Section.WEARABLES_HAIR
+              // Section.WEARABLES_HEAD,
+              // Section.WEARABLES_FACIAL_HAIR,
+              // Section.WEARABLES_HAIR
             ]}
             currentValue={section}
             onMenuItemClick={onSectionClick}
           />
 
           {[
-            Section.WEARABLES_UPPER_BODY,
-            Section.WEARABLES_LOWER_BODY,
-            Section.WEARABLES_FEET
+            // Section.WEARABLES_UPPER_BODY,
+            // Section.WEARABLES_LOWER_BODY,
+            // Section.WEARABLES_FEET
           ].map(menuSection => (
             <MenuItem
               key={menuSection}
@@ -81,14 +81,14 @@ const NFTSections = (props: Props) => {
 
           <DropdownMenu
             values={[
-              Section.WEARABLES_ACCESORIES,
-              Section.WEARABLES_EARRING,
-              Section.WEARABLES_EYEWEAR,
-              Section.WEARABLES_HAT,
-              Section.WEARABLES_HELMET,
-              Section.WEARABLES_MASK,
-              Section.WEARABLES_TIARA,
-              Section.WEARABLES_TOP_HEAD
+              // Section.WEARABLES_ACCESORIES,
+              // Section.WEARABLES_EARRING,
+              // Section.WEARABLES_EYEWEAR,
+              // Section.WEARABLES_HAT,
+              // Section.WEARABLES_HELMET,
+              // Section.WEARABLES_MASK,
+              // Section.WEARABLES_TIARA,
+              // Section.WEARABLES_TOP_HEAD
             ]}
             currentValue={section}
             onMenuItemClick={onSectionClick}

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { storiesOf } from '@storybook/react'
 import centered from '@storybook/addon-centered/react'
 import { Header } from '../Header/Header'
-import { LoginModal, LoginModalOptionType } from '../LoginModal/LoginModal'
+import { LoginModal, LoginModalOptionType } from './LoginModal'
 import './LoginModal.stories.css'
 
 const lipsum = (

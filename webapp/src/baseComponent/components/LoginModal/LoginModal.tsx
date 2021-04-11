@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import * as React from 'react'
 import { ModalContent } from 'semantic-ui-react'
 import { Modal,  } from '../Modal/Modal'

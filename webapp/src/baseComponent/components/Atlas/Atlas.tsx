@@ -15,7 +15,7 @@ export type AtlasTile = {
   estate_id?: string
 }
 
-export { Layer, Coord }
+export type { Layer, Coord }
 
 export type AtlasProps = Omit<TileMapProps, 'layers'> & {
   layers?: Layer[]
@@ -26,7 +26,7 @@ export type AtlasState = {
   tiles?: Record<string, AtlasTile>
 }
 
-const COLOR_BY_TYPE = Object.freeze({
+const COLOR_BY_TYPE:any = Object.freeze({
   0: '#ff9990', // my parcels
   1: '#ff4053', // my parcels on sale
   2: '#ff9990', // my estates
@@ -110,11 +110,13 @@ export class Atlas extends React.PureComponent<AtlasProps, AtlasState> {
     const { layers, className, ...rest } = this.props
     let classes = 'dcl atlas ' + className
 
+    // @ts-ignore
+    // @ts-ignore
     return (
       <TileMap
         {...rest}
         className={classes.trim()}
-        layers={[this.layer, ...layers]}
+        layers={[this.layer, ...(layers||[])]}
       />
     )
   }

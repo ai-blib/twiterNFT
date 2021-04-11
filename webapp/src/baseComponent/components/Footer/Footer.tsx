@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as React from 'react'
 import { Container } from '../Container/Container'
 import { LanguageDropdownI18N, LanguageDropdownProps, LanguageDropdown } from '../LanguageDropdown/LanguageDropdown'
@@ -46,9 +47,9 @@ export class Footer extends React.PureComponent<FooterProps> {
       }
     }
   }
-
+  /* eslint-disable */
   render() {
-    const {
+    let {
       locale,
       locales,
       onChange,
@@ -64,7 +65,11 @@ export class Footer extends React.PureComponent<FooterProps> {
     if (className) {
       classes += ' ' + className
     }
-
+    // @ts-ignore
+    /* eslint-disable */
+    // @ts-ignore
+    // @ts-ignore
+    // @ts-ignore
     return (
       <Container className={classes}>
         <div className="main-footer">
@@ -74,28 +79,28 @@ export class Footer extends React.PureComponent<FooterProps> {
             onChange={onChange}
             upward
             direction="right"
-            i18n={i18n.dropdown}
+            i18n={i18n&&i18n.dropdown}
           />
           <div className="links">
-            <a href="https://decentraland.org">{i18n.links.home}</a>
-            <a href="https://decentraland.org/privacy">{i18n.links.privacy}</a>
-            <a href="https://decentraland.org/terms">{i18n.links.terms}</a>
-            <a href="https://decentraland.org/content">{i18n.links.content}</a>
-            <a href="https://decentraland.org/ethics">{i18n.links.ethics}</a>
+            <a href="">{i18n&&i18n.links.home}</a>
+            <a href="">{i18n&&i18n.links.privacy}</a>
+            <a href="">{i18n&&i18n.links.terms}</a>
+            <a href="">{i18n&&i18n.links.content}</a>
+            <a href="">{i18n&&i18n.links.ethics}</a>
           </div>
         </div>
         <div className="secondary-footer">
           <div className="social-links">
-            <a href="https://dcl.gg/discord">
+            <a href="">
               <i className="social-icon discord" />
             </a>
-            <a href="https://reddit.com/r/decentraland">
+            <a href="">
               <i className="social-icon reddit" />
             </a>
-            <a href="https://github.com/decentraland">
+            <a href="">
               <i className="social-icon github" />
             </a>
-            <a href="https://twitter.com/decentraland">
+            <a href="">
               <i className="social-icon twitter" />
             </a>
           </div>

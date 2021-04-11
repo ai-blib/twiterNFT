@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Network } from '@dcl/schemas'
 import * as React from 'react'
 import { MenuItem, Icon } from 'semantic-ui-react'

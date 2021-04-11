@@ -17,7 +17,6 @@ const AccountSidebar = (props: Props) => {
   )
 
   const decentraland = Vendors.DECENTRALAND
-
   return (
     <div className="NFTSidebar">
       <VendorMenu

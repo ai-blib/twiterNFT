@@ -6,6 +6,6 @@
     { "src": "/.*", "dest": "/index.html" }
   ],
   "github": {
-    "silent": true
+    "silent": false
   }
 }

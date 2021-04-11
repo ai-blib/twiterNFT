@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from 'react'
 import { Container } from '../Container/Container'
 import { Header } from '../Header/Header'
@@ -11,7 +12,7 @@ export type HeroProps = {
 }
 
 export class Hero extends React.PureComponent<HeroProps> {
-  static Header = ({ children, ...props }) => (
+  static Header = ({ children, ...props }:any) => (
     <Container>
       <Header className="hero-title" size="huge" {...props}>
         {children}
@@ -19,7 +20,7 @@ export class Hero extends React.PureComponent<HeroProps> {
     </Container>
   )
 
-  static Description = ({ children, ...props }) => (
+  static Description = ({ children, ...props }:any) => (
     <Container>
       <Header className="hero-subtitle" {...props}>
         {children}
@@ -27,13 +28,13 @@ export class Hero extends React.PureComponent<HeroProps> {
     </Container>
   )
 
-  static Content = ({ children, ...props }) => (
+  static Content = ({ children, ...props }:any) => (
     <div className="hero-content" {...props}>
       {children}
     </div>
   )
 
-  static Actions = ({ children, ...props }) => (
+  static Actions = ({ children, ...props }:any) => (
     <Container className="hero-actions" {...props}>
       {children}
     </Container>
@@ -56,7 +57,7 @@ export class Hero extends React.PureComponent<HeroProps> {
       style = { width, height }
     }
     return (
-      <div className={'dcl hero' + classes} style={style}>
+      <div className={'dcl hero' + classes} style={style||{}}>
         {children}
       </div>
     )

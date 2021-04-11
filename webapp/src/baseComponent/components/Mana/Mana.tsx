@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from 'react'
 import { Network } from '@dcl/schemas'
 import { Header, HeaderProps } from '../Header/Header'

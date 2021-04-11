@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as React from 'react'
 import { Menu, Responsive } from 'semantic-ui-react'
 import { Mana } from '../Mana/Mana'
@@ -62,7 +63,7 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
     middleMenu: null,
     i18n: {
       menu: {
-        marketplace: 'Marketplace',
+        marketplace: 'NFT',
         docs: 'Docs',
         events: 'Events',
         agora: 'Agora',
@@ -111,39 +112,9 @@ export class Navbar extends React.PureComponent<NavbarProps, NavbarState> {
       <>
         <Menu.Item
           active={activePage === 'marketplace'}
-          href="https://market.decentraland.org"
+          href="/"
         >
           {i18n.menu.marketplace}
-        </Menu.Item>
-        <Menu.Item
-          active={activePage === 'builder'}
-          href="https://builder.decentraland.org"
-        >
-          {i18n.menu.builder}
-        </Menu.Item>
-        <Menu.Item
-          active={activePage === 'docs'}
-          href="https://docs.decentraland.org"
-        >
-          {i18n.menu.docs}
-        </Menu.Item>
-        <Menu.Item
-          active={activePage === 'events'}
-          href="https://events.decentraland.org"
-        >
-          {i18n.menu.events}
-        </Menu.Item>
-        <Menu.Item
-          active={activePage === 'dao'}
-          href="https://dao.decentraland.org"
-        >
-          {i18n.menu.dao}
-        </Menu.Item>
-        <Menu.Item
-          active={activePage === 'blog'}
-          href="https://decentraland.org/blog"
-        >
-          {i18n.menu.blog}
         </Menu.Item>
       </>
     )
